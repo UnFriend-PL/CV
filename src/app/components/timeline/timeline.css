@@ -1,0 +1,9 @@
+.TimeLine {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  flex-basis: 100%;
+}

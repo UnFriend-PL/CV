@@ -1,0 +1,103 @@
+:root {
+  --colorOne: rgb(238, 105, 105);
+  --colorTwo: white;
+  --borderSize: 5px;
+  --borderRadius: 20px;
+  --fontSize: 2rem;
+}
+
+.TimeLinePoint:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+  border-left: var(--borderSize) solid var(--colorOne);
+  border-bottom-left-radius: var(--borderRadius);
+  border-top: var(--borderSize) solid var(--colorOne);
+  border-top-left-radius: var(--borderRadius);
+}
+.TimeLinePoint:first-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 50%;
+  border-left: var(--borderSize) solid var(--colorOne);
+  border-top: none;
+  /* border-radius: 50px; */
+}
+.TimeLinePoint::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: var(--borderSize) solid var(--colorOne);
+}
+.TimeLinePoint:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 50%;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  border-bottom: var(--borderSize) solid var(--colorOne);
+  border-right: var(--borderSize) solid var(--colorOne);
+  border-top: var(--borderSize) solid var(--colorOne);
+  border-top-right-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+
+  /* border-radius: var(--borderRadius); */
+}
+.TimeLinePoint {
+  min-width: 50vw;
+  max-width: 85vw;
+  background-color: white;
+  color: var(--colorOne);
+  position: relative;
+  /* box-sizing: border-box; */
+  padding: 5%;
+}
+
+.TimeLinePointCounter:nth-child(odd) {
+  position: absolute;
+  color: var(--colorTwo);
+  background-color: var(--colorOne);
+  border-radius: 45%;
+  left: -1em;
+  top: 45%;
+  min-width: 2em;
+  min-height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.TimeLinePoint:nth-child(even) .TimeLinePointCounter {
+  top: 45%;
+  left: 97.5%;
+  position: absolute;
+}
+.TimeLinePoint:first-child {
+  border-left: none;
+}
+
+.TimeLinePointTitle {
+  flex-basis: 100%;
+}
+.TimeLinePointDate {
+}
+.TimeLinePointDescription {
+}
+
+.CenterItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: center;
+}
