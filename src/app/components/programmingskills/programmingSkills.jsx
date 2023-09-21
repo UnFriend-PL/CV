@@ -20,7 +20,7 @@ export default function ProgrammingSkills() {
     setCodeArray(newCodeArray);
   };
   return (
-    <div className="ProgrammingSkillsWrap">
+    <div className="ProgrammingSkillsWrap " id="ITSkills">
       <div className="ProgrammingSkillsSection">
         <ScreenWithCode
           key={codeArray.length}

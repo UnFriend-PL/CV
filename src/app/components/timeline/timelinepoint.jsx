@@ -7,7 +7,7 @@ export default function TimeLinePoint({
   skills = [],
 }) {
   return (
-    <div className="TimeLinePoint CenterItems">
+    <div className="TimeLinePoint CenterItems" key={number}>
       <div className="TimeLinePointCounter">
         <h3>{number}</h3>
       </div>
