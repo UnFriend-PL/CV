@@ -1,10 +1,10 @@
 import TimeLine from "./components/timeline/timeline";
-import ScreenWithCode from "./programmingskills/screenwithcode";
+import ProgrammingSkills from "./programmingskills/programmingSkills";
 
 export default function Home() {
   return (
     <main>
-      <ScreenWithCode></ScreenWithCode>
+      <ProgrammingSkills> </ProgrammingSkills>
       <TimeLine></TimeLine>
     </main>
   );
