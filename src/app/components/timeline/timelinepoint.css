@@ -40,17 +40,15 @@
   content: "";
   position: absolute;
   right: 0;
-  left: 50%;
+  left: 45%;
   bottom: 0;
-  width: 50%;
+  width: 55%;
   height: 100%;
   border-bottom: var(--borderSize) solid var(--colorOne);
   border-right: var(--borderSize) solid var(--colorOne);
   border-top: var(--borderSize) solid var(--colorOne);
   border-top-right-radius: var(--borderRadius);
   border-bottom-right-radius: var(--borderRadius);
-
-  /* border-radius: var(--borderRadius); */
 }
 .TimeLinePoint {
   min-width: 50vw;
@@ -58,27 +56,29 @@
   background-color: white;
   color: var(--colorOne);
   position: relative;
-  /* box-sizing: border-box; */
   padding: 5%;
 }
 
-.TimeLinePointCounter:nth-child(odd) {
+.TimeLinePointCounter {
   position: absolute;
-  color: var(--colorTwo);
+  border-radius: 50%;
   background-color: var(--colorOne);
-  border-radius: 45%;
-  left: -1em;
-  top: 45%;
-  min-width: 2em;
-  min-height: 2em;
+  color: var(--colorTwo);
+  min-width: 50px;
+  min-height: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-.TimeLinePoint:nth-child(even) .TimeLinePointCounter {
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
   top: 45%;
-  left: 97.5%;
-  position: absolute;
+}
+
+.TimeLinePoint:nth-child(even) .TimeLinePointCounter {
+  right: -0.9em;
+}
+.TimeLinePoint:nth-child(odd) .TimeLinePointCounter {
+  left: -0.9em;
 }
 .TimeLinePoint:first-child {
   border-left: none;
