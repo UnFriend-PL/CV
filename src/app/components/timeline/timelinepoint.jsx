@@ -1,5 +1,11 @@
 import "./timelinepoint.css";
-export default function TimeLinePoint({ number, title, date, desc }) {
+export default function TimeLinePoint({
+  number,
+  title,
+  date,
+  desc,
+  skills = [],
+}) {
   return (
     <div className="TimeLinePoint CenterItems">
       <div className="TimeLinePointCounter">
@@ -9,6 +15,13 @@ export default function TimeLinePoint({ number, title, date, desc }) {
         <h2>{title}</h2>
       </div>
       <div className="TimeLinePointDate">{date}</div>
+      <div className="Pills">
+        {skills.map((element, index) => (
+          <div className="Pill" key={index}>
+            {element}
+          </div>
+        ))}
+      </div>
       <div className="TimeLinePointDescription">{desc}</div>
     </div>
   );

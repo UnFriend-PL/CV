@@ -1,6 +1,9 @@
 :root {
   --colorOne: rgb(238, 105, 105);
   --colorTwo: white;
+  --titleColor: black;
+  --dateColor: rgb(146, 141, 148);
+  --descColor: rgb(78, 78, 78);
   --borderSize: 5px;
   --borderRadius: 20px;
   --fontSize: 2rem;
@@ -26,7 +29,6 @@
   height: 50%;
   border-left: var(--borderSize) solid var(--colorOne);
   border-top: none;
-  /* border-radius: 50px; */
 }
 .TimeLinePoint::before {
   content: "";
@@ -80,16 +82,24 @@
 .TimeLinePoint:nth-child(odd) .TimeLinePointCounter {
   left: -0.9em;
 }
-.TimeLinePoint:first-child {
-  border-left: none;
-}
 
 .TimeLinePointTitle {
   flex-basis: 100%;
+  font-weight: bold;
+  color: var(--titleColor);
+  font-size: 1.6rem;
+  text-align: left;
 }
 .TimeLinePointDate {
+  text-align: left;
+  color: var(--dateColor);
+  min-width: 100%;
 }
 .TimeLinePointDescription {
+  color: var(--descColor);
+  min-width: 100%;
+  text-align: justify;
+  padding-top: 1%;
 }
 
 .CenterItems {
@@ -100,4 +110,22 @@
   align-items: stretch;
   align-content: stretch;
   text-align: center;
+}
+.Pills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: center;
+  flex-basis: 100%;
+}
+.Pill {
+  background-color: #386fc0;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-right: 0.5%;
+  display: inline-block;
 }
