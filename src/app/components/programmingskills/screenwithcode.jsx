@@ -1,7 +1,6 @@
 "use client";
 import TextTypingAnimation from "./TextTypingAnimation";
 import "./monitor.css";
-import { cs } from "./languages";
 
 export default function ScreenWithCode({ codeArray }) {
   return (

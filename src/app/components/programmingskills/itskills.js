@@ -23,7 +23,7 @@ export let htmlCode = [
   "<!DOCTYPE html>",
   "<html>",
   "<head>",
-  "    <title>Hello World Example</title>",
+  "    <title>Hello World</title>",
   "</head>",
   "<body>",
   "    <p>Hello, World!</p>",
@@ -51,3 +51,13 @@ export let angularCode = [
 ];
 export let error = ["Erorr", ":("];
 export let sql = ["SELECT 'Hello, World!' AS message;"];
+export let problemSolving = [
+  "Umiejętność rozwiązywania problemów jest kluczowa w moim życiu zawodowym i osobistym.",
+  "Pozwala mi ona efektywnie analizować sytuacje, identyfikować wyzwania i opracowywać skuteczne strategie rozwiązania problemów. ",
+];
+export let githubInfo = [
+  "Error",
+  ":(",
+  "But You still can visit my Git ->",
+  "github.com/UnFriend-PL/",
+];
