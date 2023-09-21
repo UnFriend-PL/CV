@@ -20,7 +20,7 @@
   padding-bottom: 1em;
 }
 .ProgrammingSkillsSection h2::after {
-  content: "*Najedź na ikonę!";
+  content: "*Hover over the icon!";
   color: grey;
   padding-left: 1%;
   font-size: 0.2em;
@@ -52,12 +52,12 @@
 }
 @media (max-width: 1280px) {
   .ProgrammingSkillsSection h2::after {
-    content: "*Kliknij na ikonę, a potem spójrz na monitor!";
+    content: "*Click on the icon, then look at the monitor!";
     color: grey;
     padding: 1%;
     font-size: 0.2em;
   }
-  h2 {
+  .ProgrammingSkillsSection h2 {
     margin-top: 5vh;
     line-height: 2%;
   }

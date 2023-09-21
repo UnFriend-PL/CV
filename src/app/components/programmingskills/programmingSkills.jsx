@@ -11,7 +11,9 @@ import {
   javaCode,
   error,
   sql,
-} from "./languages";
+  problemSolving,
+  githubInfo,
+} from "./itskills";
 export default function ProgrammingSkills() {
   const [codeArray, setCodeArray] = useState(csCode);
   const handleITSkillHover = (newCodeArray) => {
@@ -104,13 +106,26 @@ export default function ProgrammingSkills() {
           <div
             className="ITSkill"
             onMouseEnter={() => {
-              handleITSkillHover(error);
+              handleITSkillHover(githubInfo);
             }}
           >
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
           </div>
-          <div className="ITSkill Text">
+          <div
+            className="ITSkill Text"
+            // onMouseEnter={() => {
+            //   handleITSkillHover(problemSolving);
+            // }}
+          >
             <p>problem solving</p>
+          </div>
+          <div
+            className="ITSkill Text"
+            // onMouseEnter={() => {
+            //   handleITSkillHover(problemSolving);
+            // }}
+          >
+            <p>Can-do attitude</p>
           </div>
         </div>
       </div>
