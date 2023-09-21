@@ -6,7 +6,9 @@ export default function TimeLine() {
 
   return (
     <>
-      <div className="SectionTitle">Experience</div>
+      <div className="SectionTitle" id="Experience">
+        Experience
+      </div>
       <div className="TimeLine">
         {experience.map((element, index) => (
           <TimeLinePoint
