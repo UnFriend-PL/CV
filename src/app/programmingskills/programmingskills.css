@@ -1,0 +1,88 @@
+.ProgrammingSkillsWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: black;
+  min-height: 80vh;
+}
+
+.ProgrammingSkillsSection {
+  min-width: 30vw;
+}
+.ProgrammingSkillsSection h2 {
+  font-weight: bold;
+  font-size: 3em;
+  color: white;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+.ProgrammingSkillsSection h2::after {
+  content: "*Najedź na ikonę!";
+  color: grey;
+  padding-left: 1%;
+  font-size: 0.2em;
+}
+.ITSkills {
+  max-width: 30vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.ITSkill {
+  max-width: 10vw;
+  font-size: 1.3em;
+  margin: 2%;
+}
+.ITSkill img {
+  max-width: 6vw;
+  width: 100%;
+}
+.ITSkill p {
+  background-color: rgba(0, 0, 0, 0.925);
+  color: white;
+  padding: 5%;
+  text-align: center;
+  border-radius: 25px;
+}
+@media (max-width: 1280px) {
+  .ProgrammingSkillsSection h2::after {
+    content: "*Kliknij na ikonę, a potem spójrz na monitor!";
+    color: grey;
+    padding: 1%;
+    font-size: 0.2em;
+  }
+  h2 {
+    margin-top: 5vh;
+    line-height: 2%;
+  }
+  .ProgrammingSkillsSection {
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ITSkills {
+    max-width: 80vw;
+  }
+  .ITSkill {
+    max-width: 15vw;
+    font-size: 1.3em;
+    margin: 2%;
+  }
+  .ITSkill img {
+    max-width: 8vw;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .ITSkill img {
+    max-width: 10vw;
+    width: 100%;
+  }
+}
