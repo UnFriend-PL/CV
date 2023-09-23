@@ -7,6 +7,7 @@
   --borderSize: 5px;
   --borderRadius: 20px;
   --fontSize: 2rem;
+  --fontDescSize: 1.2rem;
 }
 
 .TimeLinePoint:nth-child(odd)::before {
@@ -100,6 +101,7 @@
   color: var(--descColor);
   min-width: 100%;
   text-align: justify;
+  font-size: var(--fontDescSize);
   padding-top: 1%;
 }
 
@@ -129,6 +131,7 @@
   border-radius: 20px;
   margin-right: 0.5%;
   display: inline-block;
+  text-transform: capitalize;
 }
 @media (max-width: 768px) {
   .TimeLinePointDescription {
