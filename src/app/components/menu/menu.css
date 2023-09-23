@@ -26,6 +26,7 @@
   vertical-align: middle;
   cursor: pointer;
   position: relative;
+  padding: 4% 0 4% 0;
 }
 .spacer:before {
   content: "";
