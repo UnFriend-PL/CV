@@ -1,0 +1,80 @@
+.Card {
+  color: #000000;
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(204, 204, 204, 1);
+  box-shadow: 0px 6px 5px 0px rgba(204, 204, 204, 1);
+  border-radius: 4px;
+  max-height: 80%;
+  min-height: 50vh;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 40vw;
+}
+
+.CardImage {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  overflow: hidden;
+  margin: 2%;
+  height: 40%;
+  animation-fill-mode: forwards;
+}
+.CardImage img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.CardTitle {
+  max-width: 90%;
+  min-width: 90%;
+  font-weight: bold;
+  font-size: 1.3rem;
+  animation-fill-mode: forwards;
+}
+.CardDesc {
+  max-width: 90%;
+  min-width: 90%;
+  animation-fill-mode: forwards;
+}
+.Dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.Dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Dot.active {
+  background-color: var(--menuColor);
+}
+.showCard {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: showCard 0.5s ease forwards;
+}
+@keyframes showCard {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .Card {
+    max-width: 80vw;
+  }
+}
