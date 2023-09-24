@@ -7,8 +7,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --menuColor: rgba(60, 180, 250, 0.8);
-
+  --menuColor: #3cb4facc;
 }
 
 @media (prefers-color-scheme: dark) {
