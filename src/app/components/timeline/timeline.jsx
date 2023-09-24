@@ -2,8 +2,6 @@ import TimeLinePoint from "./timelinepoint";
 import "./timeline.css";
 import { experience } from "./experience";
 export default function TimeLine() {
-  console.log(experience);
-
   return (
     <>
       <h2 className="SectionTitle" id="Experience">

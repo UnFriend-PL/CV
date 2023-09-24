@@ -1,6 +1,6 @@
 .menu {
   text-transform: uppercase;
-  color: rgba(60, 180, 250, 0.8);
+  color: var(--menuColor);
   display: inline-block;
   cursor: pointer;
   pointer-events: none;
