@@ -5,14 +5,14 @@ export default function AboutMe() {
   return (
     <div className="AboutMeWrapper" id="AboutMe">
       <h1>Szymon Marcinkowski</h1>
-      <h2 class="SectionTitle">AboutMe()</h2>
+      <h2 className="SectionTitle">AboutMe()</h2>
       <div className="AbouMeContent">
-        <div class="Squares">
+        <div className="Squares">
           <div className="SquareLeftoToRight"></div>
           <div className="SquareLeftoToBottom"></div>
         </div>
 
-        <div class="AboutMeInterests">
+        <div className="AboutMeInterests">
           {shortDesc.map((element, index) => (
             <p key={index}>{element}</p>
           ))}
@@ -20,7 +20,7 @@ export default function AboutMe() {
         <div className="AboutMeSliderWrap">
           <CardCarousele cards={interests}></CardCarousele>
         </div>
-        <div class="Squares">
+        <div className="Squares">
           <div className="SquareRightToTop"></div>
           <div className="SquareRightToLeft"></div>
         </div>
