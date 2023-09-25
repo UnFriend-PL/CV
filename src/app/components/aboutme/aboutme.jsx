@@ -1,7 +1,18 @@
+"use client";
 import "./aboutme.css";
 import CardCarousele from "./cardcarousele";
-import { interests, shortDesc } from "./interests";
+import { data } from "./interests";
+import { useLangContext } from "@/app/services/context";
+
 export default function AboutMe() {
+  const { lang } = useLangContext();
+  let shortDesc, interests;
+  lang == "eng"
+    ? (shortDesc = data.shortDesc.en)
+    : (shortDesc = data.shortDesc.pl);
+  lang == "eng"
+    ? (interests = data.interests.en)
+    : (interests = data.interests.pl);
   return (
     <div className="AboutMeWrapper" id="AboutMe">
       <h1>Szymon Marcinkowski</h1>
