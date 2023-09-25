@@ -14,6 +14,7 @@ import {
   problemSolving,
   githubInfo,
 } from "./itskills";
+import Image from "next/image";
 export default function ProgrammingSkills() {
   const [codeArray, setCodeArray] = useState(csCode);
   const handleITSkillHover = (newCodeArray) => {
@@ -36,7 +37,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(csCode);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"
+            />
           </div>
           <div
             className="ITSkill"
@@ -44,7 +49,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(error);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            />
           </div>
           <div
             className="ITSkill"
@@ -52,7 +61,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(jsCode);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+            />
           </div>
           <div
             className="ITSkill"
@@ -60,7 +73,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(htmlCode);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            />
           </div>
           <div
             className="ITSkill"
@@ -68,7 +85,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(javaCode);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+            />
           </div>
           <div
             className="ITSkill"
@@ -76,7 +97,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(reactCode);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            />
           </div>
           <div
             className="ITSkill"
@@ -84,7 +109,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(angularCode);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
+            />
           </div>
           <div
             className="ITSkill"
@@ -92,7 +121,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(sql);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            />
           </div>
           <div
             className="ITSkill"
@@ -100,7 +133,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(error);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+            />
           </div>
 
           <div
@@ -109,7 +146,11 @@ export default function ProgrammingSkills() {
               handleITSkillHover(githubInfo);
             }}
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            <Image
+              width={128}
+              height={128}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            />
           </div>
           <div
             className="ITSkill Text"

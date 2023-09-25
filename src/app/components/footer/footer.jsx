@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./footer.css";
 export default function Footer() {
   return (
@@ -10,7 +11,9 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/szymonmarcinkowski20/"
                 target="_blank"
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                   alt="linkedIn"
                 />
@@ -21,7 +24,9 @@ export default function Footer() {
                 href="https://www.facebook.com/szymon.marcinkowskii/"
                 target="_blank"
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
                   alt="Facebook"
                 />
@@ -29,7 +34,9 @@ export default function Footer() {
             </div>
             <div className="FooterLink">
               <a href="https://github.com/UnFriend-PL" target="_blank">
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                   alt="Github"
                 />
