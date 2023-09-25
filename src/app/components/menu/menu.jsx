@@ -22,7 +22,7 @@ export default function Menu() {
       </div>
       <div className="item">
         <span>
-          <a href="#">Contact</a>
+          <a href="#Contact">Contact</a>
         </span>
       </div>
     </div>

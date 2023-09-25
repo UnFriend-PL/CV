@@ -1,7 +1,12 @@
+"use client";
 import TimeLinePoint from "./timelinepoint";
 import "./timeline.css";
-import { experience } from "./experience";
+import { data } from "./experience";
+import { useLangContext } from "@/app/services/context";
 export default function TimeLine() {
+  const { lang } = useLangContext();
+  let experience;
+  lang == "eng" ? (experience = data.en) : (experience = data.pl);
   return (
     <>
       <h2 className="SectionTitle" id="Experience">
@@ -15,6 +20,7 @@ export default function TimeLine() {
             date={element.date}
             desc={element.desc}
             skills={element.skills}
+            key={index}
           ></TimeLinePoint>
         ))}
       </div>
