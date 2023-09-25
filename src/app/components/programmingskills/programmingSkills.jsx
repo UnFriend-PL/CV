@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import ScreenWithCode from "./screenWithCode";
+import ScreenWithCode from "./screenwithcode";
 import "./programmingskills.css";
 import {
   csCode,
