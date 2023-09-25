@@ -7,6 +7,7 @@ export default function TimeLine() {
   const { lang } = useLangContext();
   let experience;
   lang == "eng" ? (experience = data.en) : (experience = data.pl);
+  let counter = experience.length - 1;
   return (
     <>
       <h2 className="SectionTitle" id="Experience">
@@ -15,7 +16,7 @@ export default function TimeLine() {
       <div className="TimeLine">
         {experience.map((element, index) => (
           <TimeLinePoint
-            number={experience.length - index}
+            number={counter--}
             title={element.title}
             date={element.date}
             desc={element.desc}

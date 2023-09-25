@@ -26,7 +26,7 @@ export let data = {
     },
     ,
     {
-      title: "Tellbridge / Office Assistant",
+      title: "Tellbridge - Office Assistant",
       date: "04.2020 - 07.2020",
       skills: ["customer contact", "Jira", "MS Office"],
       desc: "Helpdesk - I helped customers who called with their technical problems and took calls.",
@@ -59,7 +59,7 @@ export let data = {
     },
     ,
     {
-      title: "Tellbridge / Office Assistant",
+      title: "Tellbridge - Office Assistant",
       date: "04.2020 - 07.2020",
       skills: ["obsługa klienta", "Jira", "MS Office"],
       desc: "Helpdesk - pomoc klientom z problemami technicznymi i odbieranie zgloszeń.",

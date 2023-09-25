@@ -32,7 +32,7 @@ export const data = {
         title: "Od Bitów do Bitew: Moja Pasja Programowania",
         img: "./img/coding.png",
         describe:
-          "Moja fascynacja programowaniem rozpoczęła się w gimnazjum, gdy tworzyłem pluginy do Minecrafta. To było dopiero początek mojej przygody z kodowaniem, która nasiliła się w technikum i rozkwitła na studiach. Dziś programowanie to nie tylko moje hobby, to także moja droga zawodowa, gdzie tworzenie oprogramowania staje się codzienną pasją.",
+          "Moja fascynacja programowaniem rozpoczęła się w gimnazjum, gdy tworzyłem pluginy do Minecrafta. To był dopiero początek mojej przygody z kodowaniem, która nasiliła się w technikum i rozkwitła na studiach. Dziś programowanie to nie tylko moje hobby, to także moja droga zawodowa, gdzie tworzenie oprogramowania staje się codzienną pasją.",
       },
 
       {
