@@ -11,14 +11,14 @@ function SelectLanguage() {
         <Image
           width={24}
           height={24}
-          src="/./img/pl.png"
+          src="./img/pl.png"
           onClick={() => setLang("pl")}
         />
       ) : (
         <Image
           width={24}
           height={24}
-          src="/./img/uk.png"
+          src="./img/uk.png"
           onClick={() => setLang("eng")}
         />
       )}
