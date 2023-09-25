@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import "./cardcarousele.css";
+import Image from "next/image";
 
 export default function CardCarousele({ cards }) {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -78,7 +79,12 @@ export default function CardCarousele({ cards }) {
     >
       <div className={`Card`}>
         <div className={`CardImage ${isAnimating ? "showCard" : ""}`}>
-          <img src={cards[currentCardIndex].img} alt="Card" />
+          <Image
+            src={cards[currentCardIndex].img}
+            alt="Card"
+            width={500}
+            height={300}
+          />{" "}
         </div>
         <h3 className={`CardTitle ${isAnimating ? "showCard" : ""}`}>
           {cards[currentCardIndex].title}
