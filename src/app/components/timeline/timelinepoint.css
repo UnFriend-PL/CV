@@ -29,6 +29,7 @@
   height: 50%;
   border-left: var(--borderSize) solid var(--colorOne);
   border-top: none;
+  border-top-left-radius: 0;
 }
 .TimeLinePoint::before {
   content: "";
